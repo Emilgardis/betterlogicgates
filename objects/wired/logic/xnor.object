@@ -2,7 +2,7 @@
   "objectName" : "xnor",
   "rarity" : "Common",
   "objectType" : "wire",
-  "description" : "An XNOR gate. Requires all inputs to be off.",
+  "description" : "A XNOR gate. Requires the inputs to be the same.",
   "shortdescription" : "XNOR gate",
   "race" : "human",
 
