@@ -1,0 +1,38 @@
+{
+  "objectName" : "motiondetectorwall",
+  "rarity" : "Common",
+  "objectType" : "wire",
+  "description" : "Detects movement",
+  "shortdescription" : "Motion Detector",
+  "race" : "generic",
+
+
+  "category" : "wire",
+  "price" : "300",
+
+  "inventoryIcon" : "motiondetectorwallicon.png",
+  "orientations" : [
+    {
+      "image" : "motiondetectorwall.png:<color>.off",
+      "imagePosition" : [-8, -8],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/motiondetector/motiondetector.lua" ],
+  "scriptDelta" : 12,
+
+  "animation" : "/objects/wired/switchtoggle.animation",
+
+  "animationParts" : {
+    "switch" : "motiondetectorwall.png"
+  },
+  "animationPosition" : [-8, -8],
+
+  "outboundNodes" : [ [0, 0] ],
+  
+  "detectRadius" : 3,
+  "detectTickDuration" : 4
+}
