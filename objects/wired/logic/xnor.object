@@ -1,0 +1,38 @@
+{
+  "objectName" : "xnor",
+  "rarity" : "Common",
+  "objectType" : "wire",
+  "description" : "An XNOR gate. Requires all inputs to be off.",
+  "shortdescription" : "XNOR gate",
+  "race" : "human",
+
+  "category" : "wire",
+  "price" : "300",
+
+  "inventoryIcon" : "xnor.png:default.1",
+  "orientations" : [
+    {
+      "image" : "xnor.png:<color>.off",
+      "imagePosition" : [-8, -8],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/logic/logic.lua" ],
+  "scriptDelta" : 1,
+
+  "animation" : "/objects/wired/logic/logic.animation",
+
+  "animationParts" : {
+    "switch" : "xnor.png"
+  },
+  "animationPosition" : [-8, -8],
+
+  "inboundNodes" : [ [-1, -1], [-1, 1] ],
+  "outboundNodes" : [ [1, 0] ],
+
+  "gates" : 2,
+  "truthtable" : [ [ true, false ], [ false, true ] ]
+}

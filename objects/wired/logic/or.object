@@ -1,0 +1,5 @@
+{
+  "__merge" : [],
+  "description" : "An OR gate. Allows you to have multiple individual inputs.",
+  "shortdescription" : "OR gate"
+}
