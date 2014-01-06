@@ -10,6 +10,10 @@ function init(args)
   if storage.countdown == nil then
     storage.countdown = 0
   end
+  if storage.flipped == nil then
+  	storage.flipped = ""
+end
+  	
   self.interval = entity.configParameter("pulseDuration")
   self.intervalNames = entity.configParameter("pulseName")
   self.hasChanged = false
@@ -25,22 +29,28 @@ function onInteraction(args)
 end
 
 function render()
+	world.logInfo(entity.direction())
+	if entity.direction() == 1 then
+  		storage.flipped = ""
+  	else
+  		storage.flipped = ".flipped"
+  end
 	if storage.state then
-		entity.setAnimationState("pulserIntervalState", self.intervalNames[storage.mode])
+		entity.setAnimationState("pulserIntervalState", self.intervalNames[storage.mode]..storage.flipped)
 		entity.setAnimationState("pulserFrameState", "on")
 	else
-		entity.setAnimationState("pulserIntervalState", self.intervalNames[storage.mode]..".off")
+		entity.setAnimationState("pulserIntervalState", self.intervalNames[storage.mode]..storage.flipped..".off")
 		entity.setAnimationState("pulserFrameState", "off")
 	end
 end
 
 function output(state)
 	if state then 
-  entity.setAllOutboundNodes(true)
-  storage.state = false
+		entity.setAllOutboundNodes(true)
+		storage.state = false
 	else
 		entity.setAllOutboundNodes(false)
-		end
+	end
 end
 
 function main()
