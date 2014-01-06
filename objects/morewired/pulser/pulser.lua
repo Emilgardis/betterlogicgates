@@ -29,7 +29,6 @@ function onInteraction(args)
 end
 
 function render()
-	world.logInfo(entity.direction())
 	if entity.direction() == 1 then
   		storage.flipped = ""
   	else
