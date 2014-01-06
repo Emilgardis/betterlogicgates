@@ -37,10 +37,10 @@ end
 function output(state)
 	if state then 
   entity.setAllOutboundNodes(true)
+  storage.state = false
 	else
 		entity.setAllOutboundNodes(false)
 		end
-	storage.state = state
 end
 
 function main()
@@ -50,7 +50,7 @@ function main()
  	self.hasChanged = true
  end
 	if storage.countdown > 0 then --Is a countdown on? Then countdown...
-		storage.countdown = storage.countdown - entity.dt() * 1000 * 2 --Makes countdown correct with time.
+		storage.countdown = storage.countdown - ((entity.dt() * 1000) * 2) --Makes countdown correct with time.
 	elseif storage.countdown <= 0.01 and not self.hasChanged then --Hasn't changed yet, therefore it is blocked.
 		output(false)
 	elseif storage.countdown <= 0.01 and self.hasChanged then --Has changed, allows a new output to be sent.
