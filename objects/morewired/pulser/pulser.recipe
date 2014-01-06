@@ -1,0 +1,9 @@
+{
+  "input" : [
+    //{ "item" : "laserdiode", "count" : 1 },
+    //{ "item" : "circuitboard", "count" : 1 }
+    {"item" : "money", "count" : 1 }
+  ],
+  "output" : { "item" : "pulser", "count" : 1 },
+  "groups" : [ "mod", "wiringstation", "all" ]
+}
