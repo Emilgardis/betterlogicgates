@@ -1,13 +1,17 @@
 {
   "objectName" : "nand",
+  "colonyTags" : ["wired"],
+  "printable" : false,
   "rarity" : "Common",
-  "objectType" : "wire",
-  "description" : "An NAND gate. Requires atleast one input to be off to be on.",
+  "description" : "An 'NAND' gate. Works only if both inputs are not on.",
   "shortdescription" : "NAND Gate",
   "race" : "human",
 
   "category" : "wire",
-  "price" : "300",
+  "price" : 10,
+
+  "floranDescription" : "An 'NAND' gate. Requiress atleassst one input to be off to work.",
+  "glitchDescription" : "Pleased. An 'NAND' gate. Requires atleast one input to be off to work.",
 
   "inventoryIcon" : "nand.png:default.1",
   "orientations" : [
@@ -16,7 +20,9 @@
       "imagePosition" : [-8, -8],
 
       "spaceScan" : 0.1,
-      "anchors" : [ "background" ]
+      "anchors" : [ "background" ],
+
+      "direction" : "right"
     }
   ],
 
@@ -26,12 +32,12 @@
   "animation" : "/objects/wired/logic/logic.animation",
 
   "animationParts" : {
-    "switch" : "nand.png"
+    "switch" : "and.png"
   },
   "animationPosition" : [-8, -8],
 
-  "inboundNodes" : [ [-1, -1], [-1, 1] ],
-  "outboundNodes" : [ [1, 0] ],
+  "inputNodes" : [ [-1, -1], [-1, 0] ],
+  "outputNodes" : [ [0, -1] ],
 
   "gates" : 2,
   "truthtable" : [ [ true, true ], [ true, false ] ]

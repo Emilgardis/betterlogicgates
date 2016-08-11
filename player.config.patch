@@ -1,0 +1,7 @@
+[
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "nand" }},
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "nor" }},
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "xnor" }},
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "toggle" }},
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "sevenseg" }}
+]

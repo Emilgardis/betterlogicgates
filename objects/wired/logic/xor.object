@@ -1,5 +1,0 @@
-{
-  "__merge" : [],
-  "description" : "An XOR gate. Requires one input to be on, and one off.",
-  "shortdescription" : "XOR gate"
-}

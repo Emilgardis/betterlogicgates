@@ -1,0 +1,6 @@
+[
+    {"op": "replace", "path": "/description", "value": "An 'OR' gate. Allows you to have multiple individual inputs."},
+    {"op": "replace", "path": "/shortdescription", "value": "OR Gate"},
+    {"op": "replace", "path": "/floranDescription", "value": "An 'OR' gate. Allowsss you to have multiple individual inputs."},
+    {"op": "replace", "path": "/glitchDescription", "value": "Pleased. An 'OR' switch. Allows you to have multiple individual inputs."}
+]

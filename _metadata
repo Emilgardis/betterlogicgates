@@ -1,0 +1,9 @@
+{
+  "author" : "Emilgardis",
+  "description" : "Have you eaten to many And switches(Sandwiches)? Longing for exclusively using NAND gates?? Look no more! For here is \"Better Gates!!!\"\n\nThis mod fixes the names of the gates, but also adds 3 more types of gates.\n\nChanges:\nAND switch = AND gate, Not switch = NOT gate, XOR switch = XOR gate.\n3 basic gates added; NOR gate, XNOR gate and finally the ultimate, practical NAND gate.\nT Flip-Flop implemented in 1.5.0. On a budget? Use a button as a lever!\n7-segment display implemented in 1.5.2 (Yes I know, semantic versioning doesn't really apply to this project)\n\nArtwork for the four gates was made mainly by chucklefish, but with some help of me. (DISCLAIMER: No clue what to put here really. But I don't claim to own the pictures, I simply distribute them for your fair use.)\n\nSee http://community.playstarbound.com/resources/better-gates.878/ for more info.",
+  "friendlyName" : "Better Gates",
+  "link" : "steam://url/CommunityFilePage/734422430",
+  "name" : "bettergates",
+  "steamContentId" : "734422430",
+  "version" : "1.5.2"
+}

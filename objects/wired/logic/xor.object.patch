@@ -1,0 +1,6 @@
+[
+    {"op": "replace", "path": "/description", "value": "An 'XOR' gate. Requires one input to be on, and one off."},
+    {"op": "replace", "path": "/shortdescription", "value": "XOR Gate"},
+    {"op": "replace", "path": "/floranDescription", "value": "An 'XOR' gate. Requiresss one input to be on, and one off."},
+    {"op": "replace", "path": "/glitchDescription", "value": "Pleased. An 'XOR' switch. Requires one input to be on, and one off."}
+]

@@ -1,13 +1,17 @@
 {
   "objectName" : "xnor",
+  "colonyTags" : ["wired"],
+  "printable" : false,
   "rarity" : "Common",
-  "objectType" : "wire",
-  "description" : "A XNOR gate. Requires the inputs to be the same.",
-  "shortdescription" : "XNOR gate",
+  "description" : "An 'XNOR' gate. Requires the inputs to be the same to work.",
+  "shortdescription" : "XNOR Gate",
   "race" : "human",
 
   "category" : "wire",
-  "price" : "300",
+  "price" : 10,
+
+  "floranDescription" : "An 'XNOR' gate. Requiress the inputss to be the sssame to work.",
+  "glitchDescription" : "Pleased. An 'XNOR' gate. Requires the inputs to be the same to work.",
 
   "inventoryIcon" : "xnor.png:default.1",
   "orientations" : [
@@ -16,7 +20,9 @@
       "imagePosition" : [-8, -8],
 
       "spaceScan" : 0.1,
-      "anchors" : [ "background" ]
+      "anchors" : [ "background" ],
+
+      "direction" : "right"
     }
   ],
 
@@ -30,8 +36,8 @@
   },
   "animationPosition" : [-8, -8],
 
-  "inboundNodes" : [ [-1, -1], [-1, 1] ],
-  "outboundNodes" : [ [1, 0] ],
+  "inputNodes" : [ [-1, -1], [-1, 0] ],
+  "outputNodes" : [ [0, -1] ],
 
   "gates" : 2,
   "truthtable" : [ [ true, false ], [ false, true ] ]

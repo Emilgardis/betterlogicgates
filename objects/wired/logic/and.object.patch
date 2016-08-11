@@ -1,0 +1,7 @@
+[
+    {"op": "replace", "path": "/description", "value": "An 'AND' gate. Requires all inputs to be on to work."},
+    {"op": "replace", "path": "/shortdescription", "value": "AND Gate"},
+    {"op": "replace", "path": "/floranDescription", "value": "An 'AND' gate. Requiress all inputs to be on to work."},
+    {"op": "replace", "path": "/glitchDescription", "value": "Pleased. An 'AND' gate. Requires all inputs to be on to work."}
+]
+

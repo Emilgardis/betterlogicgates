@@ -1,5 +1,0 @@
-{
-  "__merge" : [],
-  "description" : "A NOT gate. Inverts the input on the circuit.",
-  "shortdescription" : "NOT gate"
-}

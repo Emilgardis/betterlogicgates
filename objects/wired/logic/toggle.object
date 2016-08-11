@@ -1,0 +1,41 @@
+{
+  "objectName" : "toggle",
+  "colonyTags" : ["wired"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "A Toggle Flip-Flop. It acts like a lever.",
+  "shortdescription" : "Toggle Flip-Flop",
+  "race" : "human",
+
+  "category" : "wire",
+  "price" : 10,
+
+  "floranDescription" : "A Toggle Flip-Flop. It actss like a lever.",
+  "glitchDescription" : "Fascinated. A Toggle Flip-Flop. It acts like a lever.",
+
+  "inventoryIcon" : "toggle.png:default.1",
+  "orientations" : [
+    {
+      "image" : "toggle.png:<color>.off",
+      "imagePosition" : [-8, -8],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ],
+
+      "direction" : "right"
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/logic/toggle.lua" ],
+  "scriptDelta" : 1,
+
+  "animation" : "/objects/wired/logic/logic.animation",
+
+  "animationParts" : {
+    "switch" : "toggle.png"
+  },
+  "animationPosition" : [-8, -8],
+
+  "inputNodes" : [ [-1, -1] ],
+  "outputNodes" : [ [0, -1] ]
+}

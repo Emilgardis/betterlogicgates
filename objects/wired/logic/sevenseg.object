@@ -1,0 +1,39 @@
+{
+  "objectName" : "sevenseg",
+  "colonyTags" : ["wired"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "Seven seg",
+  "shortdescription" : "sevenseg",
+  "race" : "human",
+
+  "category" : "wire",
+  "price" : 30,
+
+  "inventoryIcon" : "sevenseg.png:blank",
+  "orientations" : [
+    {
+      "image" : "sevenseg.png:blank",
+      "imagePosition" : [0, -16],
+      "animationCycle" : 1,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ],
+
+      "direction" : "right"
+    }
+  ],
+
+  "animation" : "/objects/wired/logic/sevenseg.animation",
+  "animationParts" : {
+    "displayed" : "sevenseg.png:blank",
+    "background" : "blank"
+  },
+  "animationPosition" : [0, -16],
+  "interval" : 30,
+
+  "scripts" : [ "/objects/wired/logic/sevenseg.lua" ],
+  "scriptDelta" : 20,
+
+  "inputNodes" : [[1, 1], [0, 0], [2, 0], [1, -1], [0, -1], [2, -1], [1, -2]]
+}
